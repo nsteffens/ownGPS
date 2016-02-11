@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  ownGPS
 //
-//  Created by Nico Steffens on 11.02.16.
-//  Copyright © 2016 Nico. All rights reserved.
+//  Created by Nico Steffens on 30.11.15.
+//  Copyright © 2015 Nico Steffens. All rights reserved.
 //
 
 import UIKit
