@@ -3,9 +3,9 @@ An iOS app written in Swift to send your GPS Position to an own Map. Works over 
 
 ## Requirements:
 
-AlamoFire v. 3.2.0
-Xcode 7.2
-iOS 8.0+
+- AlamoFire v. 3.2.0
+- Xcode 7.2
+- iOS 8.0+
 
 ## Instructions:
 
