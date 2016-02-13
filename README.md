@@ -3,8 +3,10 @@ An iOS app written in Swift to send your GPS Position to an own Map. Works over 
 
 ## Requirements:
 
+(if you want to run it in Xcode)
 - AlamoFire v. 3.2.0
 - Xcode 7.2
+(if you want to run it on your device)
 - iOS 8.0+
 
 ## Instructions:
@@ -13,6 +15,10 @@ An iOS app written in Swift to send your GPS Position to an own Map. Works over 
 - Open the Project in Xcode, build & sign it with your Developer ID and run it on your iOS device.
 - Insert the server URL e.g. http://192.168.0.1/endpoint.php and press the blue button
 - Statustext shows "Success!" and you can see your position on e.g. http://192.168.0.1/map.php
+
+### IPA Installation
+
+You can also install the added .ipa file. Just put it in iTunes and install it. You have to change some security settings in the Settings App (allow/trust my profile) to run it.
 
 ## License:
 
