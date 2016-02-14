@@ -31,6 +31,8 @@
 	<string>Please allow me to get your location</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Please allow me to get your location</string>
+	<key>UILaunchStoryboardName</key>
+	<string>Main</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>

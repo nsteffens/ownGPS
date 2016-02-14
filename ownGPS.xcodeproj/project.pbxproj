@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9501B4AC1C6C228700539971 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9501B49F1C6C227800539971 /* Alamofire.framework */; };
 		9501B4AD1C6C228700539971 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9501B49F1C6C227800539971 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		95AFFC941C702425000ECDBF /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFFC931C702425000ECDBF /* LocationTableViewCell.swift */; };
+		95AFFC961C702775000ECDBF /* LocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFFC951C702775000ECDBF /* LocationTableViewController.swift */; };
 		95BA48CA1C6C220500FAA2FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BA48C91C6C220500FAA2FC /* AppDelegate.swift */; };
 		95BA48CC1C6C220500FAA2FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BA48CB1C6C220500FAA2FC /* ViewController.swift */; };
 		95BA48CF1C6C220500FAA2FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95BA48CD1C6C220500FAA2FC /* Main.storyboard */; };
@@ -91,6 +93,8 @@
 
 /* Begin PBXFileReference section */
 		9501B4941C6C227800539971 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		95AFFC931C702425000ECDBF /* LocationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		95AFFC951C702775000ECDBF /* LocationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTableViewController.swift; sourceTree = "<group>"; };
 		95BA48C61C6C220500FAA2FC /* ownGPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ownGPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95BA48C91C6C220500FAA2FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95BA48CB1C6C220500FAA2FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 				95BA48C91C6C220500FAA2FC /* AppDelegate.swift */,
 				95BA48CB1C6C220500FAA2FC /* ViewController.swift */,
 				95BA48CD1C6C220500FAA2FC /* Main.storyboard */,
+				95AFFC951C702775000ECDBF /* LocationTableViewController.swift */,
+				95AFFC931C702425000ECDBF /* LocationTableViewCell.swift */,
 				95BA48D01C6C220500FAA2FC /* Assets.xcassets */,
 				95BA48D21C6C220500FAA2FC /* LaunchScreen.storyboard */,
 				95BA48D51C6C220500FAA2FC /* Info.plist */,
@@ -293,6 +299,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95AFFC961C702775000ECDBF /* LocationTableViewController.swift in Sources */,
+				95AFFC941C702425000ECDBF /* LocationTableViewCell.swift in Sources */,
 				95BA48CC1C6C220500FAA2FC /* ViewController.swift in Sources */,
 				95BA48CA1C6C220500FAA2FC /* AppDelegate.swift in Sources */,
 			);
