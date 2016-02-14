@@ -78,10 +78,10 @@
             </objects>
             <point key="canvasLocation" x="949" y="272"/>
         </scene>
-        <!--LocationView-->
+        <!--Saved Locations-->
         <scene sceneID="O2n-VH-duR">
             <objects>
-                <viewController title="LocationView" id="xVx-A9-ivM" customClass="LocationTableViewController" customModule="ownGPS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Saved Locations" id="xVx-A9-ivM" customClass="LocationTableViewController" customModule="ownGPS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="tbx-8R-EWY">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -97,7 +97,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYd-oL-qHb">
                                             <rect key="frame" x="23" y="19" width="569" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -107,7 +107,13 @@
                                 </connections>
                             </tableViewCell>
                         </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="xVx-A9-ivM" id="YwN-fY-vJS"/>
+                        </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="locationTableView" destination="tbx-8R-EWY" id="9b6-hY-xz2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vlF-qd-wP1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

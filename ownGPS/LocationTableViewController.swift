@@ -9,12 +9,15 @@
 //
 
 import UIKit
+import CoreData
+
+var locations = [NSManagedObject]()
 
 class LocationTableViewController: UITableViewController {
 
     // MARK: Properties
     
-    var locations = [String]()
+    @IBOutlet weak var locationTableView: UITableView!
     
     
     override func viewDidLoad() {
@@ -32,11 +35,11 @@ class LocationTableViewController: UITableViewController {
     func loadSampleLocations(){
     
     
-        let loc1 = "Location 1"
-        let loc2 = "Location 2"
-        let loc3 = "Location 3"
-        
-        locations += [loc1,loc2,loc3]
+//        let loc1 = "Location 1"
+//        let loc2 = "Location 2"
+//        let loc3 = "Location 3"
+//        
+//        locations = [loc1,loc2,loc3]
     
     }
     override func didReceiveMemoryWarning() {
@@ -64,12 +67,37 @@ class LocationTableViewController: UITableViewController {
         
         let location = locations[indexPath.row]
         
-        cell.locationLabel.text = location
+        // Get the location date & make it look nice
+        let formatter = NSDateFormatter()
+        formatter.dateStyle = NSDateFormatterStyle.LongStyle
+        formatter.timeStyle = .MediumStyle
+        let dateString = formatter.stringFromDate(location.valueForKey("timestamp") as! NSDate)
+        
+        // To access attributes of CoreData Object use this:
+        cell.locationLabel.text = dateString
+        //cell.locationLabel.text = "Location \(indexPath.row)"
         
         return cell
     }
     
+    override func viewWillAppear(animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext;
+        
+        let fetchRequest = NSFetchRequest(entityName: "Location")
+        
+        do {
+            let results = try managedContext.executeFetchRequest(fetchRequest)
+            locations = results as! [NSManagedObject]
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
 
+        
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
