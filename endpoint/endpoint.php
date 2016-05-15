@@ -14,6 +14,6 @@ if (isset($_GET["lat"]) && isset($_GET["lon"])) {
     echo "success";
 } else {
     header('HTTP/1.0 400 Bad Request');
-    echo 'Please type this URL in the <a href="https://play.google.com/store/apps/details?id=fr.herverenault.selfhostedgpstracker">Self-Hosted GPS Tracker</a> Android app on your phone.';
+    echo 'Error.';
 }
 ?>
